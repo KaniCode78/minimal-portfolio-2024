@@ -1,0 +1,67 @@
+
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: bisque;
+    margin: 0;
+    padding: 60px 0 0 0;
+}
+
+#page {
+    margin: 0px auto;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+#header img{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 5rem;
+    padding: 15px 20px;
+    background-color: #333;
+    
+}
+
+#content {
+    height: 100%;
+    overflow: auto;
+    padding: 0% 1% 0% 1%;
+    width: 98%;
+}
+
+
+
+
+
+.contenedor {
+    display: flex;
+    justify-content: end;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+}
+
+
+.logo {
+    height: 10rem;
+    align-items: end;
+}
+
+
+.contenedor__img {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contenedor__img img {
+    max-height: 100%;
+
+}
