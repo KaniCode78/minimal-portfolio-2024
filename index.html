@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Fixet</title>
+    <title>Rodriguez Mora Web Design</title>
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
@@ -14,88 +14,132 @@
     <header>
         <div class="contenedor">
             <div class="fixed"><!--Menu Fixed-->
-                <button id="abrir" class="abrir-menu">abrir</button>
-                <nav id="nav" class="fixed__menu nav">
-                    <button class="cerrar-menu" id="cerrar">Close</button>
-                    
-                    <ul class="nav-list">
-                        <li>
-                            <a href="#home">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                                    width="24px" fill="#FFFFFF">
-                                    <path
-                                        d="M242.87-202.87H354.5V-445.5h251v242.63h111.63v-355.7L480-736.41 242.87-558.57v355.7Zm-91 91v-492.2L480-850.28l328.13 246.13v492.28H518.09v-246.22h-76.18v246.22H151.87ZM480-469.52Z" />
-                                </svg>
-                                <p>Home</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#proyectos">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                                    width="24px" fill="#FFFFFF">
-                                    <path
-                                        d="M316.41-232.35 68.52-480l247.89-247.89 64.89 64.65-184 184 183 183-63.89 63.89Zm327.18.24-64.89-64.65 184-184-183-183 63.89-63.89L891.48-480 643.59-232.11Z" />
-                                </svg>
-                                <p>Proyectos</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="oculto" href="#info">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                                    width="24px" fill="#FFFFFF">
-                                    <path
-                                        d="M436.41-276.41h87.18V-520h-87.18v243.59ZM480-595.22q19.03 0 31.91-12.87 12.87-12.88 12.87-31.91t-12.87-31.91q-12.88-12.87-31.91-12.87t-31.91 12.87q-12.87 12.88-12.87 31.91t12.87 31.91q12.88 12.87 31.91 12.87Zm0 523.35q-84.91 0-159.34-32.12-74.44-32.12-129.5-87.17-55.05-55.06-87.17-129.5Q71.87-395.09 71.87-480t32.12-159.34q32.12-74.44 87.17-129.5 55.06-55.05 129.5-87.17 74.43-32.12 159.34-32.12t159.34 32.12q74.44 32.12 129.5 87.17 55.05 55.06 87.17 129.5 32.12 74.43 32.12 159.34t-32.12 159.34q-32.12 74.44-87.17 129.5-55.06 55.05-129.5 87.17Q564.91-71.87 480-71.87Zm0-91q133.04 0 225.09-92.04 92.04-92.05 92.04-225.09 0-133.04-92.04-225.09-92.05-92.04-225.09-92.04-133.04 0-225.09 92.04-92.04 92.05-92.04 225.09 0 133.04 92.04 225.09 92.05 92.04 225.09 92.04ZM480-480Z" />
-                                </svg>
-                                <p>Info</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="oculto" href="#contacto">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                                    width="24px" fill="#FFFFFF">
-                                    <path
-                                        d="M354.98-77.37v-527.8q-91.24-25.92-145.62-103.6-54.38-77.69-54.38-173.14h87.17q0 82.52 53.26 141.26 53.26 58.74 134.96 58.74h98.43q31.14 0 58.13 11.12 26.98 11.12 48.94 33.07l183.39 183.39L758-393.07 603.59-547.48v470.11h-87.18V-320h-74.26v242.63h-87.17Zm124.3-644.54q-34.67 0-59.13-24.56-24.45-24.55-24.45-59.03 0-34.67 24.45-59.13 24.46-24.46 59.13-24.46 34.68 0 59.13 24.46 24.46 24.46 24.46 59.01t-24.46 59.13q-24.45 24.58-59.13 24.58Z" />
-                                </svg>
-                                <p>Contacto</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="oculto" href="#faq">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
-                                    width="24px" fill="#FFFFFF">
-                                    <path
-                                        d="M436.41-276.41h87.18V-520h-87.18v243.59ZM480-595.22q19.03 0 31.91-12.87 12.87-12.88 12.87-31.91t-12.87-31.91q-12.88-12.87-31.91-12.87t-31.91 12.87q-12.87 12.88-12.87 31.91t12.87 31.91q12.88 12.87 31.91 12.87Zm0 523.35q-84.91 0-159.34-32.12-74.44-32.12-129.5-87.17-55.05-55.06-87.17-129.5Q71.87-395.09 71.87-480t32.12-159.34q32.12-74.44 87.17-129.5 55.06-55.05 129.5-87.17 74.43-32.12 159.34-32.12t159.34 32.12q74.44 32.12 129.5 87.17 55.05 55.06 87.17 129.5 32.12 74.43 32.12 159.34t-32.12 159.34q-32.12 74.44-87.17 129.5-55.06 55.05-129.5 87.17Q564.91-71.87 480-71.87Zm0-91q133.04 0 225.09-92.04 92.04-92.05 92.04-225.09 0-133.04-92.04-225.09-92.05-92.04-225.09-92.04-133.04 0-225.09 92.04-92.04 92.05-92.04 225.09 0 133.04 92.04 225.09 92.05 92.04 225.09 92.04ZM480-480Z" />
-                                </svg>
-                                <p>FAQ</p>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+
+                <div class="fixed__menu ocultar">
+
+                    <a href="#home">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M242.87-202.87H354.5V-445.5h251v242.63h111.63v-355.7L480-736.41 242.87-558.57v355.7Zm-91 91v-492.2L480-850.28l328.13 246.13v492.28H518.09v-246.22h-76.18v246.22H151.87ZM480-469.52Z" />
+                        </svg>
+                        <p>Home</p>
+                    </a>
+
+                    <a class="oculto" href="#info">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M436.41-276.41h87.18V-520h-87.18v243.59ZM480-595.22q19.03 0 31.91-12.87 12.87-12.88 12.87-31.91t-12.87-31.91q-12.88-12.87-31.91-12.87t-31.91 12.87q-12.87 12.88-12.87 31.91t12.87 31.91q12.88 12.87 31.91 12.87Zm0 523.35q-84.91 0-159.34-32.12-74.44-32.12-129.5-87.17-55.05-55.06-87.17-129.5Q71.87-395.09 71.87-480t32.12-159.34q32.12-74.44 87.17-129.5 55.06-55.05 129.5-87.17 74.43-32.12 159.34-32.12t159.34 32.12q74.44 32.12 129.5 87.17 55.05 55.06 87.17 129.5 32.12 74.43 32.12 159.34t-32.12 159.34q-32.12 74.44-87.17 129.5-55.06 55.05-129.5 87.17Q564.91-71.87 480-71.87Zm0-91q133.04 0 225.09-92.04 92.04-92.05 92.04-225.09 0-133.04-92.04-225.09-92.05-92.04-225.09-92.04-133.04 0-225.09 92.04-92.04 92.05-92.04 225.09 0 133.04 92.04 225.09 92.05 92.04 225.09 92.04ZM480-480Z" />
+                        </svg>
+                        <p>Acerca de Mi</p>
+                    </a>
+
+                    <a href="#proyectos">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M316.41-232.35 68.52-480l247.89-247.89 64.89 64.65-184 184 183 183-63.89 63.89Zm327.18.24-64.89-64.65 184-184-183-183 63.89-63.89L891.48-480 643.59-232.11Z" />
+                        </svg>
+                        <p>Proyectos</p>
+                    </a>
+
+                    <a class="oculto" href="#contacto">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M354.98-77.37v-527.8q-91.24-25.92-145.62-103.6-54.38-77.69-54.38-173.14h87.17q0 82.52 53.26 141.26 53.26 58.74 134.96 58.74h98.43q31.14 0 58.13 11.12 26.98 11.12 48.94 33.07l183.39 183.39L758-393.07 603.59-547.48v470.11h-87.18V-320h-74.26v242.63h-87.17Zm124.3-644.54q-34.67 0-59.13-24.56-24.45-24.55-24.45-59.03 0-34.67 24.45-59.13 24.46-24.46 59.13-24.46 34.68 0 59.13 24.46 24.46 24.46 24.46 59.01t-24.46 59.13q-24.45 24.58-59.13 24.58Z" />
+                        </svg>
+                        <p>Contacto</p>
+                    </a>
+
+                    <a class="oculto" href="#faq">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M436.41-276.41h87.18V-520h-87.18v243.59ZM480-595.22q19.03 0 31.91-12.87 12.87-12.88 12.87-31.91t-12.87-31.91q-12.88-12.87-31.91-12.87t-31.91 12.87q-12.87 12.88-12.87 31.91t12.87 31.91q12.88 12.87 31.91 12.87Zm0 523.35q-84.91 0-159.34-32.12-74.44-32.12-129.5-87.17-55.05-55.06-87.17-129.5Q71.87-395.09 71.87-480t32.12-159.34q32.12-74.44 87.17-129.5 55.06-55.05 129.5-87.17 74.43-32.12 159.34-32.12t159.34 32.12q74.44 32.12 129.5 87.17 55.05 55.06 87.17 129.5 32.12 74.43 32.12 159.34t-32.12 159.34q-32.12 74.44-87.17 129.5-55.06 55.05-129.5 87.17Q564.91-71.87 480-71.87Zm0-91q133.04 0 225.09-92.04 92.04-92.05 92.04-225.09 0-133.04-92.04-225.09-92.05-92.04-225.09-92.04-133.04 0-225.09 92.04-92.04 92.05-92.04 225.09 0 133.04 92.04 225.09 92.05 92.04 225.09 92.04ZM480-480Z" />
+                        </svg>
+                        <p>FAQ</p>
+                    </a>
+                </div>
+            </div> <!--Menu Fixed-->
         </div>
     </header>
 
 
 
     <main>
-        <div id="home" class="full-heigth chome flex-center">
-            <h1>Daniel Rodriguez</h1>
-            <p>Front End Developer</p>
+        <!--home-->
+        <div class="contenedor">
+            <!--Inicia seccion home-->
+            <section>
+                <div id="home" class="full-heigth chome">
+                    <h1>Daniel Rodriguez</h1>
+                    <p>Front End Developer</p>
+                </div>
+            </section>
+            <!--Termina seccion home-->
 
-        </div>
-        <div id="proyectos" class="full-heigth cproyectos flex-center">
-            <h2>Proyectos</h2>
-        </div>
-        <div id="info" class="full-heigth cinfo flex-center">
-            <h2>Info</h2>
-        </div>
-        <div id="contacto" class="full-heigth ccontacto flex-center">
-            <h2>Contacto</h2>
-        </div>
-        <div id="faq" class="full-heigth cfaq flex-center">
-            <h2>FAQ</h2>
-        </div>
+            <!--Inicia eccion Acerca de mi-->
+            <section id="info" class="full-heigth info">
 
+
+
+                <div class="cinfo">
+
+                    <div class="cinfo__cabecera">
+                        <h2>Acerca de Mi</h2>
+                    </div>
+
+                    <article class="cinfo__foto">
+                        <img src="./assets/img/profile-pic 2.png" alt="imagen personal" height="199px" width="199px">
+                    </article>
+
+
+                    <article class="cinfo__contenido">
+                        <p>
+                            Soy Daniel y estoy en constante búsqueda de desafíos que me motiven. Como emprendedor de
+                            corazón,
+                            me encanta sumergirme en el mundo del diseño, especialmente en el desarrollo web y todo lo
+                            relacionado
+                            con lo visual e interactivo.
+
+                            Me gusta crear experiencias web que no solo se vean geniales, sino que también sean súper
+                            intuitivas y
+                            fáciles de usar. Creo que el secreto está en combinar la estética con la funcionalidad para
+                            hacer magia
+                            en cada sitio que desarrollo.
+
+                            Siempre estoy al día con las últimas tendencias y tecnologías. ¿Aprender algo nuevo? ¡Cuenta
+                            conmigo!
+                            Creo que la clave está en estar en constante evolución para seguir ofreciendo lo mejor a mis
+                            clientes.
+
+                            Así que, si estás buscando alguien que te ayude a llevar tu presencia en línea al siguiente
+                            nivel,
+                            ¡estás en el lugar correcto! Vamos a crear algo increíble juntos.
+                        </p>
+                    </article>
+
+
+
+
+
+            </section>
+            <!--Termina Seccion Acerca de mi-->
+
+
+
+            <div id="proyectos" class="full-heigth cproyectos flex-center">
+                <h2>Proyectos</h2>
+            </div>
+            <div id="contacto" class="full-heigth ccontacto flex-center">
+                <h2>Contacto</h2>
+            </div>
+            <div id="faq" class="full-heigth cfaq flex-center">
+                <h2>FAQ</h2>
+            </div>
+        </div>
 
 
 
