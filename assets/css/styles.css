@@ -38,15 +38,17 @@ body {
     background-image: var(--complementoFondo);
 }
 
-
+/*
 @media (min-width:768px) {
     body {
         overflow-x: hidden;
         /* desactivar el scroll del mouse izq-der*/
-        overflow-y: hidden;
+/* overflow-y: hidden;
         /* desactivar el scroll del mouse arriba y abajo*/
-    }
+/*  }
 }
+
+*/
 
 p {
     font-family: var(--fuente);
@@ -69,7 +71,15 @@ h3 {
 
 a {
     text-decoration: none;
+    font-family: var(--fuente);
+    color: var(--blanco);
 }
+
+a:hover {
+    color: var(--efecto);
+}
+
+
 
 ul,
 li {
@@ -106,26 +116,6 @@ img {
 }
 
 
-
-
-/*colores a las secciones del menu fijo*/
-
-/*
-.cproyectos {
-    background-color: beige;
-}
-
-.cinfo {
-    background-color: bisque;
-}
-
-.ccontacto {
-    background-color: wheat;
-}
-
-.cfaq {
-    background-color: blanchedalmond;
-} */
 
 /*fixed*/
 
@@ -237,7 +227,7 @@ img {
     flex: 1 1 auto;
 }
 
-.cinfo__cabecera h2{
+.cinfo__cabecera h2 {
     font-weight: lighter;
     font-size: 3rem;
 }
@@ -267,7 +257,7 @@ img {
 
     .cinfo__cabecera h2 {
         font-size: 4rem;
-        
+
     }
 
     .cinfo__contenido p {
@@ -276,4 +266,103 @@ img {
         line-height: 3rem;
         font-weight: lighter;
     }
+}
+
+
+
+
+
+/* Proyectos */
+
+
+
+.cproyectos_contenido img {
+    height: 20rem;
+    width:35rem;
+    border-radius: 8px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.div1__texto {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+
+@media (min-width:768px) {
+
+
+
+.cproyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 10rem;
+}
+
+.cproyectos h2{
+    padding-top: 10rem;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+.cproyectos_contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 10rem;
+}
+
+.grupo1{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.div1__flex {
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #705f7d;
+}
+
+
+
+
+
+}
+
+
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    
+    
+    background-color: #000000;
+ 
+
+   
+    width: 100%;
+
+
+}
+
+.fixed__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
 }
