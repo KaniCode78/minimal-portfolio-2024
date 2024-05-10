@@ -351,6 +351,8 @@ img {
     background-image: var(--complementoFondo);
     width: 100%;
     border: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
 
 }
@@ -358,7 +360,14 @@ img {
 .fixed__footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-evenly;
     align-items: center;
+   
 
+}
+
+.fixed__footer img{
+
+    height: 24px;
+    width: 24px;
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Line">
+        <g>
+            <path d="M30,2L30,30L2,30L2,2L30,2M31,1L1,1L1,31L31,31L31,1Z" style="fill:white;fill-rule:nonzero;"/>
+            <path d="M30,2L30,30L2,30L2,2L30,2M31,1L1,1L1,31L31,31L31,1Z" style="fill:white;fill-rule:nonzero;"/>
+        </g>
+        <path d="M23.872,22.524L23.872,16.702C23.872,13.583 22.207,12.131 19.987,12.131C18.195,12.131 17.393,13.117 16.945,13.808L16.945,12.37L13.57,12.37C13.615,13.323 13.57,22.524 13.57,22.524L16.945,22.524L16.945,16.853C16.945,16.55 16.967,16.247 17.056,16.03C17.3,15.424 17.855,14.796 18.787,14.796C20.009,14.796 20.497,15.727 20.497,17.092L20.497,22.525L23.872,22.524ZM10.015,10.984C11.192,10.984 11.925,10.204 11.925,9.229C11.903,8.233 11.192,7.475 10.038,7.475C8.884,7.475 8.128,8.233 8.128,9.229C8.128,10.204 8.861,10.984 9.994,10.984L10.015,10.984ZM11.702,22.524L11.702,12.37L8.327,12.37L8.327,22.524L11.702,22.524Z" style="fill:white;fill-rule:nonzero;"/>
+    </g>
+</svg>
