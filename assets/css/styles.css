@@ -278,11 +278,11 @@ img {
 
 .cproyectos_contenido img {
     height: 20rem;
-    width:35rem;
+    width: 35rem;
     border-radius: 8px;
     object-fit: cover;
     background-repeat: no-repeat;
-    
+
 }
 
 .div1__texto {
@@ -298,54 +298,70 @@ img {
 
 
 
-.cproyectos{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding-bottom: 10rem;
-}
+    .cproyectos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        padding-bottom: 10rem;
+    }
 
-.cproyectos h2{
-    padding-top: 10rem;
-    font-size: 4rem;
-    font-weight: lighter;
-}
+    .cproyectos h2 {
+        padding-top: 10rem;
+        font-size: 4rem;
+        font-weight: lighter;
+    }
 
-.cproyectos_contenido{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    padding-bottom: 10rem;
-}
+    .cproyectos_contenido {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        padding-bottom: 10rem;
+    }
 
-.grupo1{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
+    .grupo1 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 
-.div1__flex {
-    border-radius: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #705f7d;
-}
-
-
-
+    .div1__flex {
+        border-radius: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #705f7d;
+    }
 
 
 }
 
 
+/*carrusel*/
 
-.footer{
+.ctecno{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.ctecno__card img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+/*footer*/
+
+
+.footer {
     position: fixed;
     bottom: 0;
     background-image: var(--complementoFondo);
@@ -353,20 +369,18 @@ img {
     border: none;
     padding-top: 1rem;
     padding-bottom: 1rem;
-
-
 }
 
-.fixed__footer{
+.fixed__footer {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
-   
+
 
 }
 
-.fixed__footer img{
+.fixed__footer img {
 
     height: 24px;
     width: 24px;
