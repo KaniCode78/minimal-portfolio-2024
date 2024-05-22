@@ -38,17 +38,17 @@ body {
     background-image: var(--complementoFondo);
 }
 
-/*
+
 @media (min-width:768px) {
     body {
         overflow-x: hidden;
         /* desactivar el scroll del mouse izq-der*/
-/* overflow-y: hidden;
+        overflow-y: hidden;
         /* desactivar el scroll del mouse arriba y abajo*/
-/*  }
+    }
 }
 
-*/
+
 
 p {
     font-family: var(--fuente);
@@ -343,13 +343,13 @@ img {
 
 /*carrusel*/
 
-.ctecno{
+.ctecno {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 
-.ctecno__card img{
+.ctecno__card img {
     width: 50px;
     height: 50px;
 }
