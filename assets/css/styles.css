@@ -56,6 +56,7 @@ p {
 
 h2 {
     font-family: var(--fuente);
+    font-weight: lighter;
 }
 
 
@@ -343,19 +344,239 @@ img {
 
 /*carrusel*/
 
-.ctecno {
+.ctecno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.icon-slider {
+    width: 100%; /* Ancho del contenedor */
+    overflow: hidden; /* Oculta los íconos que se salen del contenedor */
+    margin: 0; /* Quita el margen del contenedor */
+    padding: 10px 0; /* Espacio vertical alrededor de los íconos */
+    height: 30rem;
+    display: flex;
+
+}
+
+.icon-track {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5rem; /* Espacio entre los íconos */
+    animation: scroll 25s linear infinite; /* Controla la animación */
+    width: max-content;
+}
+
+.icon-track i {
+    color: #fff; /* Color de los íconos */
+    font-size: 5rem; /* Tamaño de los íconos */
+}
+
+
+
+/* Animación para desplazar los íconos de izquierda a derecha */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.slider-container {
+    width: 30rem; /* Ajusta el ancho según necesites */
+    height: 200px; /* Ajusta la altura según necesites */
+    overflow: hidden; /* Oculta los elementos que están fuera del área visible */
+    position: relative;
+    border: 2px solid #333; /* Bordes opcionales para el contenedor */
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Comienza fuera del contenedor */
+    animation: slide-up 10s linear infinite; /* Configuración de la animación */
+}
+
+.slide {
+    width: 100%;
+    height: 200px; /* Igual a la altura del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+  
+    border-bottom: 2px solid #fff; /* Separador entre slides */
+}
+
+/* Animación para deslizar de abajo hacia arriba */
+@keyframes slide-up {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -500%; /* Ajusta este valor para que el contenido completo pase */
+    }
+}
+
+.icon-slider2 {
+    width: 200px; /* Ajusta el ancho del contenedor */
+    height: 200px; /* Ajusta la altura del contenedor */
+    overflow: hidden; /* Oculta los íconos que se salen del contenedor */
+    position: relative;
+    border: 2px solid #333; /* Bordes opcionales para el contenedor */
+}
+
+.icon-track2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    animation: scroll-down 10s linear infinite; /* Configura la animación */
+}
+
+.icon-track2 i {
+    font-size: 5rem; /* Tamaño de los íconos */
+    color: #fff; /* Color de los íconos */
+    margin: 10px 0; /* Espacio entre íconos */
+}
+
+/* Animación para deslizar de arriba hacia abajo */
+@keyframes scroll-down {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+
+
+
+
+/* Contacto */
+
+.ccontacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    /* border: solid 2px #ffffff; */
+}
+
+.ccontacto h2 {
+    
+    font-weight: lighter;
+    font-size: 4rem;
+    color: var(--blanco);
+}
+
+.ccontacto p {
+    
+    font-weight: lighter;
+    font-size: 2.5rem;
+    color: var(--blanco);
+    padding-bottom: 5rem;
+}
+
+.ccontacto form {
+    font-family: var(--fuente);
+}
+
+.parent {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5rem;
+    grid-row-gap: 3rem;
+    font-size: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    width: 100%;
 }
 
-.ctecno__card img {
-    width: 50px;
-    height: 50px;
+.parent input {
+    border: none;
+    /* Elimina todos los bordes */
+    border-bottom: 2px solid var(--blanco);
+    /* Agrega solo el borde inferior */
+    background: none;
+    /* Elimina el fondo del input */
+    outline: none;
+    /* Elimina el borde de enfoque predeterminado */
+    padding-bottom: 2rem;
+}
+
+.parent input::placeholder {
+    color: var(--fondo);
+}
+
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 1 / 2 / 2;
+    gap: 3rem;
+    width: 100%;
+    
 }
 
 
 
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 2 / 2 / 3;
+    gap: 3rem;
+    
+}
+
+.div3 {
+    grid-area: 2 / 1 / 3 / 3;
+    gap: 3rem;
+}
+
+.div3 input {
+    width: 100%;
+    padding-top: 3rem;
+}
+
+
+
+.div4 {
+    grid-area: 3 / 1 / 4 / 3;
+    align-content: center;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.div4 button {
+    border: 2px solid var(--blanco);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 50%;
+    background: none;
+    color: var(--blanco);
+    
+}
+
+.div4 button i {
+    font-size: 2rem; /* Ajusta el tamaño del ícono */
+    
+}
 
 
 /*footer*/
