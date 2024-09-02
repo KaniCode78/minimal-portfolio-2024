@@ -12,18 +12,3 @@ cerrar.addEventListener("click", () => {
 
 
 
-const items = document.querySelectorAll('.carousel-item');
-const container = document.querySelector('.carousel-container');
-
-items.forEach(item => {
-    item.addEventListener('click', () => {
-        // Detener la animación del carrusel
-        container.style.animationPlayState = 'paused';
-
-        // Mover el ícono seleccionado al centro
-        items.forEach(i => i.classList.remove('active'));
-        item.classList.add('active');
-
-        item.style.transform = 'translate(-50%, -50%) scale(1.5)';
-    });
-});
